@@ -1,0 +1,2 @@
+rootProject.name = "LockedBrowser"
+include ':app'
