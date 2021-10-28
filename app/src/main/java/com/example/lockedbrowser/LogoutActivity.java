@@ -11,19 +11,20 @@ import android.widget.Toast;
 
 public class LogoutActivity extends AppCompatActivity {
 
-    Button btnLogout;
+    // Button btnLogout;
     EditText etPasscode;
-    String passcode;
-    String tryPasscode;
+    // String passcode;
+    // String tryPasscode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logout);
 
-        btnLogout = findViewById(R.id.btnLogout);
+        //btnLogout = findViewById(R.id.btnLogout);
         etPasscode = findViewById(R.id.etPasscode);
 
+        /*
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +37,7 @@ public class LogoutActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Incorrect passcode!", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        }); */
     }
 
     public void launchLogin() {
