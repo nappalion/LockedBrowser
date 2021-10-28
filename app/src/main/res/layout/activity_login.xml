@@ -26,7 +26,9 @@
     <EditText
         android:id="@+id/etUrl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70sp"
+        android:maxLines="1"
+        android:inputType="text"
         android:layout_margin="10dp"
         android:hint="Enter url:"
         app:layout_constraintBottom_toBottomOf="parent"

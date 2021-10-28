@@ -49,16 +49,22 @@ public class MainActivity extends AppCompatActivity {
         // passcode = getIntent().getStringExtra("pass");
 
         // get url and load website
-        url = "http://" + getIntent().getStringExtra("web");
+        url = getIntent().getStringExtra("web");
         wvWebsite.setWebViewClient(new WebViewClient());
-        wvWebsite.loadUrl(url);
+        if (url.startsWith("http://")) {
+            wvWebsite.loadUrl(url);
+        }
+        else {
+            wvWebsite.loadUrl("http://" + url);
+        }
     }
 
+    /*
     public void LogOutAction(MenuItem item) {
         Intent i = new Intent(MainActivity.this, LogoutActivity.class);
         // i.putExtra("pass", passcode);
         startActivity(i);
-    }
+    }*/
 
     /*
     @Override
