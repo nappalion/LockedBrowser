@@ -1,9 +1,12 @@
-# LockedBrowser
-LockedBrowser is an app that locks the browser and prevents the user from typing in a new URL. A passcode is required to change the URL.
+# LockedBrowser - Kiosk
+LockedBrowser is an app that locks the browser and prevents the user from typing in a new URL. It functions like a kiosk.
 ## Features
-- Login screen asks for passcode and url.
+- Login screen asks for url.
+- Enable and disable button to prevent the login url from being edited.
 - Web browser is locked and the URL is not available for typing.
-- Back button brings user to previous page.
+- Back button brings user to previous page instead of exiting app.
+## Features available but not visible.
+- Login screen also asks for passcode
 - Logout button above web browser brings the user to the login screen.
 ## App Walkthrough Gif
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='LockedBrowser.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
